@@ -1,0 +1,112 @@
+---
+title: "Linear Regression"
+author: "hwittlieff"
+date: "11/20/2021"
+output: pdf_document
+bibliography: bibliography.bib
+---
+
+# Introduction
+
+Since 1990 Pokemon has been captivating the hearts and minds of children and adults alike. In the pursuit of Pokemon battle wins, many players of Pokemon often ask themselves what makes up the strongest Pokemon?
+The complete Pokemon database on Kaggle provides data on over 800 Pokemon from 7 different generations. This data set features base statistics such as: attack, defense, height, weight, and many more. These base statistics can be utilized to evaluate each Pokemon's individual power. 
+
+# Problem Statement
+
+Do physical characteristics (height, weight, and gender) impact Pokemon base stats?
+
+# Addressing the Problem Statement
+
+To address the problem statement I utilized The Complete Pokemon Dataset [@CompletePokemonDataset]. From the database a new statistic was created from the following "power" classified fields:
+
+* attack
+* defense
+* hp
+
+This new statistic represents the sum of the individual Pokemon's rankings in each of the three categories. For example, a Pokemon that was ranked 5th highest in attack, 20th highest in defense, and 15th in hp would receive an overall ranking of 5+20+15 = 40. This new field is called ranked_power. 
+
+A regression model will then be used to attempt to predict this newly created field. This model will use the below independent variables:
+
+* weight_kg
+* height_m
+* percentage_male
+
+\newpage
+
+# Analysis
+
+```{r include=FALSE}
+# Import Dataset
+Pokemon_df <- read.csv("Data/pokemon.csv")
+
+# Clean the dataset
+Pokemon_df[19, "height_m"] = 0.7
+Pokemon_df[19, "weight_kg"] = 3.5
+Pokemon_df[20, "height_m"] = 0.7
+Pokemon_df[20, "weight_kg"] = 18.5
+Pokemon_df[26, "height_m"] = 0.8
+Pokemon_df[26, "weight_kg"] = 30
+Pokemon_df[27, "height_m"] = 0.6
+Pokemon_df[27, "weight_kg"] = 12
+Pokemon_df[28, "height_m"] = 1
+Pokemon_df[28, "weight_kg"] = 29.5
+Pokemon_df[37, "height_m"] = 0.6
+Pokemon_df[37, "weight_kg"] = 9.9
+Pokemon_df[38, "height_m"] = 1.1
+Pokemon_df[38, "weight_kg"] = 19.9
+Pokemon_df[50, "height_m"] = 0.2
+Pokemon_df[50, "weight_kg"] = 0.8
+Pokemon_df[51, "height_m"] = 0.7
+Pokemon_df[51, "weight_kg"] = 33.3
+Pokemon_df[52, "height_m"] = 0.4
+Pokemon_df[52, "weight_kg"] = 4.2
+Pokemon_df[53, "height_m"] = 1
+Pokemon_df[53, "weight_kg"] = 32
+Pokemon_df[74, "height_m"] = 0.4
+Pokemon_df[74, "weight_kg"] = 20
+Pokemon_df[75, "height_m"] = 1
+Pokemon_df[75, "weight_kg"] = 105
+Pokemon_df[76, "height_m"] = 1.4
+Pokemon_df[76, "weight_kg"] = 300
+Pokemon_df[88, "height_m"] = 0.9
+Pokemon_df[88, "weight_kg"] = 30
+Pokemon_df[89, "height_m"] = 1.2
+Pokemon_df[89, "weight_kg"] = 30
+Pokemon_df[103, "height_m"] = 2
+Pokemon_df[103, "weight_kg"] = 120 
+Pokemon_df[105, "height_m"] = 1
+Pokemon_df[105, "weight_kg"] = 45
+Pokemon_df[720, "height_m"] = 0.5
+Pokemon_df[720, "weight_kg"] = 9
+Pokemon_df[745, "height_m"] = 0.8
+Pokemon_df[745, "weight_kg"] = 25
+Pokemon_df <- subset(Pokemon_df, select = c("name", "attack", "defense", "height_m", "hp", "percentage_male", "sp_attack", "sp_defense", "speed", "weight_kg"))
+```
+
+1. Create the new ranked_power variable
+
+```{r include=TRUE}
+# Create new ranked power field
+Pokemon_df$attack_rank <- rank(-Pokemon_df$attack, na.last=TRUE, ties.method="average")
+Pokemon_df$defense_rank <- rank(-Pokemon_df$defense, na.last=TRUE, ties.method="average")
+Pokemon_df$hp_rank <- rank(-Pokemon_df$hp, na.last=TRUE, ties.method="average")
+Pokemon_df$ranked_power <- Pokemon_df$attack_rank + Pokemon_df$defense_rank + Pokemon_df$hp_rank
+```
+2. Build the regression model
+```{r include=TRUE}
+# Create linear model
+power_lm <- lm(ranked_power ~ height_m + weight_kg + percentage_male, data = Pokemon_df)
+summary(power_lm)
+```
+The fitted model is statistically significant for each independent variable as all have P values lower than 0.05. The R2 value is ~.31 meaning that about 31% of the variability in the ranked_power field can be predicted from the model.
+
+# Implications
+The results of this model can be used to increase the likelihood of picking the most powerful Pokemon if the Pokemon's height, weight, and percentage male are known. This information will be useful to players early on when playing digital Pokemon games in selecting which Pokemon to train throughout their play through. Additionally, the results from this project could be used to identify gaps in Pokemon characteristics to further improve the balance of the games. 
+
+# Limitations
+This model was only able to account for 31% of the variability in our custom ranked_power field. Adding additional characteristics such as Pokemon type, may be able to further improve the fit of the model. Additionally, Pokemon can be weak or strong against various other types of Pokemon. Investigating these relationships was outside of the scope of this project, but may warrant being included in future analysis. 
+
+# Concluding Remarks
+From this analysis some insight into the characteristics of Pokemon and their impacts on power was gained. However, opportunities still exist to build knowledge on these relationships. This model provides insight as a stepping stone for future analysis. 
+
+# Bibliography
