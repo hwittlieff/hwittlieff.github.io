@@ -1,7 +1,7 @@
 # Hello, 
 # I'm Harlan Wittlieff
 
-About me [About.md](about.md)
+[About me](hwittlieff.github.io/about)
 
 ## Welcome to GitHub Pages
 
