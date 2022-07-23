@@ -1,10 +1,14 @@
-# Hello, I'm Harlan Wittlieff
+# Hello, I'm Harlan Wittlieff.
 
-## [About me](About.md)
+### Thank you for visiting my page.
 
-## Welcome to GitHub Pages
+## About Me
 
-You can use the [editor on GitHub](https://github.com/hwittlieff/hwittlieff.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+I am currently a student at Bellevue University pursuing a Masters of Science in Data Science.
+
+## Contact Info
+
+* LinkedIn @ [Harlan Wittlieff](https://www.linkedin.com/in/harlanw//)
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
