@@ -1,6 +1,6 @@
 # About Me
 
-I've been an Industrial Engineer at [Airlite Plastics Co.](https://www.airliteplastics.com) for the past three years. In this role I primarily focus on continuous improvement and leveraging data for insights on key business initiatives. In addition to being an Industrial Engineer, I am also a student at [Bellevue University](https://www.bellevue.edu/) pursuiting a Masters of Science in Data Science. I'll be finishing my coursework in August of 2023. 
+I've been an Industrial Engineer at [Airlite Plastics Co.](https://www.airliteplastics.com) for the past three years. In this role I primarily focus on continuous improvement and leveraging data for insights on key business initiatives. In addition to being an Industrial Engineer, I am also a student at [Bellevue University](https://www.bellevue.edu/) pursuing a Masters of Science in Data Science. I'll be finishing my coursework in August of 2022. 
 
 ### Previously...
 
