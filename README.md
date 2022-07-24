@@ -1,14 +1,14 @@
 # About Me
 
-I've been an Industrial Engineer at [Airlite Plastics Co.](https://www.airliteplastics.com) for the past three years. In this role I primarily focus on continuous improvement and leveraging data for insights on key business initiatives. In addition to being an Industrial Engineer, I am also a student at [Bellevue University](https://www.bellevue.edu/) pursuing a Masters of Science in Data Science. I'll be finishing my coursework in August of 2022. 
+For the past three years, I've been working as an Industrial Engineer at [Airlite Plastics Co.](https://www.airliteplastics.com) In this role, I primarily focus on continuous improvement and leveraging data for insights on key business initiatives. In addition to working as an Industrial Engineer, I also attend [Bellevue University](https://www.bellevue.edu/) as a graduate student pursuing a Masters of Science in Data Science. I will graduate in August of 2022. 
 
 ### Previously...
 
 #### July 2019 Edition
-I'm an Engineering Analyst for [Oriental Trading Company](https://www.orientaltrading.com/). In this role I focus on labor studies and establishing standard work. 
+As an Engineering Analyst for [Oriental Trading Company](https://www.orientaltrading.com/), I focus on labor studies and establishing standard work. During the busy season, I lead the Problem Resolution Department searching transactional data for lost inventory. 
 
 #### August 2017 Edition
-I'm an Industrial Engineer at [TruXedo](https://truxedo.com/). In this role I focus on driving continuous improvement. Additional I partner with our sister companies to establish best practices across all of the [Truck Hero](https://truck-hero.com/) brands.
+At [TruXedo](https://truxedo.com/), I'm an Industrial Engineer. In this role, I am the continuous improvement champion. Additionally, I partner with our sister companies to establish best practices across all of the [Truck Hero](https://truck-hero.com/) brands. I travel to multiple worksites, observe current processes, and make recommendations for enhanced process efficiency.
 
 # Work/Projects
 * [API Data Pulling](https://github.com/hwittlieff/hwittlieff.github.io/tree/main/API%20Data%20Pulling)
