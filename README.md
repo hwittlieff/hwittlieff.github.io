@@ -18,6 +18,9 @@ At [TruXedo](https://truxedo.com/), I'm an Industrial Engineer. In this role, I 
 * [R - Linear Regression](https://github.com/hwittlieff/hwittlieff.github.io/tree/main/R%20-%20Linear%20Regression)
 * [Recommender System](https://github.com/hwittlieff/hwittlieff.github.io/tree/main/Recommender%20System)
 * [Web Scraping](https://github.com/hwittlieff/hwittlieff.github.io/tree/main/Web%20Scraping)
+* [Logistic Regression & Random Forest - Loan Aproval](https://github.com/hwittlieff/hwittlieff.github.io/tree/main/Logistic%20Regression%20%26%20Random%20Forest%20-%20Loan%20Approval)
+* [Space Titanic - Kaggle Competition](https://github.com/hwittlieff/hwittlieff.github.io/tree/main/Space%20Titanic%20-%20Kaggle%20Competition)
+* [Variational Autoencoder](https://github.com/hwittlieff/hwittlieff.github.io/tree/main/Variational%20Autoencoder)
 
 
 # Contact Info
