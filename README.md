@@ -10,6 +10,19 @@ As an Engineering Analyst for [Oriental Trading Company](https://www.orientaltra
 #### August 2017 Edition
 At [TruXedo](https://truxedo.com/), I'm an Industrial Engineer. In this role, I am the continuous improvement champion. Additionally, I partner with our sister companies to establish best practices across all of the [Truck Hero](https://truck-hero.com/) brands. I travel to multiple worksites, observe current processes, and make recommendations for enhanced process efficiency.
 
+### Skills
+* Power BI
+* SAP BI
+* Tableau
+* Python
+* R
+* SQL
+* Data Analysis
+* Project Management
+* Supervised Machine Learning 
+* Unsupervised Machine Learning
+
+
 # Work/Projects
 * [API Data Pulling](https://github.com/hwittlieff/hwittlieff.github.io/tree/main/API%20Data%20Pulling)
 * [KNN & Random Forest with SMOTE - Wine Quality Predicting](https://github.com/hwittlieff/hwittlieff.github.io/tree/main/KNN%20%26%20Random%20Forest%20with%20SMOTE%20-%20Wine%20Quality%20Predicting)
